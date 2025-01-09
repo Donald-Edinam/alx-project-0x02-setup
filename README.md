@@ -1,0 +1,2 @@
+# Next.js Project Setup and Basics.
+This repository contains the setup and basic configuration for a Next.js project. It serves as a starting point for building scalable and efficient web applications using the Next.js framework. The purpose of this repository is to provide a structured and organized foundation for developers to quickly get started with their Next.js projects.
