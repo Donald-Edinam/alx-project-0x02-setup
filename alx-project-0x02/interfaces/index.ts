@@ -4,10 +4,10 @@ interface DummyInterface {
     isActive: boolean;
 }
 
-interface CardProps {
+export interface CardProps {
     title: string
     content: string
 }
 
 
-export type { DummyInterface, CardProps };
+export type { DummyInterface };
