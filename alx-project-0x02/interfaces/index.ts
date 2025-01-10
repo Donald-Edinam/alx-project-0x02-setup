@@ -1,3 +1,5 @@
+import exp from "constants";
+
 interface DummyInterface {
     id: number;
     name: string;
@@ -27,6 +29,12 @@ export interface PostProps {
     title: string;
     content: string;
     userId: number;
+}
+
+export interface UserProps {
+    name: string;
+    email: string;
+    address: string;
 }
 
 export type { DummyInterface };
