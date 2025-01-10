@@ -1,5 +1,6 @@
 import Card from '@/components/common/Card'
 import PostModal from '@/components/common/PostModal'
+import Header from '@/components/layout/Header'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
@@ -23,6 +24,7 @@ const home = () => {
 
     return (
         <>
+        <Header />
             <div className="flex flex-1 items-center justify-center gap-5 m-5">
                 <h1>This is the home page</h1>
                 <Link
