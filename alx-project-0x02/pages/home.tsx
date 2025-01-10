@@ -1,8 +1,26 @@
 import Card from '@/components/common/Card'
+import PostModal from '@/components/common/PostModal'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 
 const home = () => {
+
+    const [isModalVisible, setIsModalVisible] = useState(false);
+    const [posts, setPosts] = useState<any[]>([]);
+    
+    const handleOpenModal = () => {
+        setIsModalVisible(true);
+    }
+
+    const handleCloseModal = () => {
+        setIsModalVisible(false);
+    }
+
+    const handleAddPost = (post: any) => {
+        console.log(post);
+        setPosts([...posts, post]);
+    }   
+
     return (
         <>
             <div className="flex flex-1 items-center justify-center gap-5 m-5">
@@ -10,6 +28,17 @@ const home = () => {
                 <Link
                     className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
                     href="/about">About</Link>
+            </div>
+            <div className="container m-5">   
+                <button 
+                className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+                onClick={handleOpenModal}>Create New Post</button>
+                <PostModal
+                    visible={isModalVisible}
+                    onClose={handleCloseModal}
+                    onSubmit={handleAddPost}
+
+                />
             </div>
             <div className="container">
                 <h1 className='font-bold text-2xl p-3'>New Posts</h1>

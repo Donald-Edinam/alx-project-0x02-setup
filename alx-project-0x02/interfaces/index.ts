@@ -9,5 +9,10 @@ export interface CardProps {
     content: string
 }
 
+export interface PostModalProps {
+  visible: boolean;
+  onClose: () => void;
+  onSubmit: (post: { title: string; content: string }) => void;
+}
 
 export type { DummyInterface };
