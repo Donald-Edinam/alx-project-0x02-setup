@@ -1,0 +1,49 @@
+/* General Button Styles */
+.custom-button {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .custom-button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Size Variations */
+  .small {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+  
+  .medium {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  
+  .large {
+    font-size: 20px;
+    padding: 12px 24px;
+  }
+  
+  /* Shape Variations */
+  .rounded-sm {
+    border-radius: 4px;
+  }
+  
+  .rounded-md {
+    border-radius: 8px;
+  }
+  
+  .rounded-full {
+    border-radius: 9999px;
+  }
+  
+  /* Hover Effect */
+  .custom-button:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
