@@ -1,4 +1,4 @@
-import { ButtonProps } from '@/interfaces'
+import { type ButtonProps } from '@/interfaces'
 import React from 'react'
 import '@/styles/styles/button.css'
 

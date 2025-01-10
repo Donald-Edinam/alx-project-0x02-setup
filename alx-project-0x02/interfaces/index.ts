@@ -18,7 +18,7 @@ export interface PostModalProps {
 export interface ButtonProps {
     onClick?: () => void;
     children: React.ReactNode;
-    size?: 'sm' | 'md' | 'lg';
+    size?: 'small' | 'medium' | 'large';
     shape?: 'rounded-sm '| 'rounded-md '| 'rounded-full';
     className?: string;
 }

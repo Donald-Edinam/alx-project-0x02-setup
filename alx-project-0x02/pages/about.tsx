@@ -7,9 +7,9 @@ const about = () => {
    <>
     <h1>This is the about page</h1>
     <Link href="/">Home</Link>
-    <Button size="sm" shape="rounded-sm ">Small Rounded Button</Button>
-    <Button size="md" shape="rounded-md ">Medium Square Button</Button>
-    <Button size="lg" shape="rounded-full">Large Pill Button</Button>
+    <Button size="small" shape="rounded-sm ">Small Rounded Button</Button>
+    <Button size="medium" shape="rounded-md ">Medium Square Button</Button>
+    <Button size="large" shape="rounded-full">Large Pill Button</Button>
    </>
     
   )
