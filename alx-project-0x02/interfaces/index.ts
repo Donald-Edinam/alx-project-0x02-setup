@@ -31,10 +31,18 @@ export interface PostProps {
     userId: number;
 }
 
+
 export interface UserProps {
     name: string;
     email: string;
-    address?: string;
-}
+    address?: {
+      street: string;
+      suite: string;
+      city: string;
+      zipcode: string;
+      geo: string;
+    };
+    id?: string;
+  }
 
 export type { DummyInterface };

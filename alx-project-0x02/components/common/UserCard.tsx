@@ -7,7 +7,7 @@ const UserCard: React.FC<UserProps> = ({ name, email, address }) => {
             <div className="flex flex-col text-dark bg-gray-500 rounded-lg shadow-lg p-6">
                 <h1>{name}</h1>
                 <p>{email}</p>
-                {/* <span>By user: {address}</span> */}
+                <p>{`${address?.street}, ${address?.city}`}</p>
             </div>
         </>
     )
