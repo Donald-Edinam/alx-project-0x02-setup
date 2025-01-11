@@ -34,7 +34,7 @@ export interface PostProps {
 export interface UserProps {
     name: string;
     email: string;
-    address: string;
+    address?: string;
 }
 
 export type { DummyInterface };
